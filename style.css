@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+body {
+    margin: 0;
+    font-family: 'Dela Gothic One', sans-serif;
+
+} 
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background:#e6e6e6 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login h1, h4 {
+    color: #000;
+    font-size: 2vw;
+}
+
+.left-login h4 {
+    margin-left: 20%;
+}
+
+
+.right-login{
+
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #32b9d1;
+    border-radius:20px;
+    box-shadow: 0px 10px 40px   rgba(0, 0, 0, 0.308);
+}
+
+.card-login h1{
+    color: #e6e6e6;
+    font-weight: 800;
+    margin: 0;
+}
+
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+}
+
+.textfield input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ffffff;
+    color: #ff2121;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px   rgba(0, 0, 0, 0.308);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield label {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.textfield input::placeholder{
+    color: rgb(146, 146, 146);
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px black;
+}
+
+.animation{
+    width: 35vw;
+}
+
+@media only screen and (max-width: 900px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login h1, h4 {
+        display: none;
+    }
+
+    .left-login, .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image{
+        width: 50vw;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+}
+
+
+/* A partir daqui é tela de formulariooooooooooooo... */
+
+
+.main-form{
+    width: 100vw;
+    height: 100vh;
+    background:#e6e6e6 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
