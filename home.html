@@ -8,20 +8,100 @@
 </head>
 <body>
     <div class="main-form">
-        <div class="left-form">
-            <img src="desktop-computer-animate.svg" class="animation" alt="animação">
-        </div>
         <div class="right-form">
             <div class="card-form">
                 <h1>Formulario</h1>
-                <div class="textfield">
-                    <label form="user">Nome</label>
+                <div class="formfield">
+                    <label form="datapedido">Data do pedido de ajuda</label>
+                    <input type="date" name="datapedido" placeholder="data do pedido">
+                </div>
+                <div class="formfield">
+                    <label form="levantamento">Data do levantamento</label>
+                    <input type="date" name="levantamento" placeholder="data do pedido">
+                </div>
+                <div class="formfield">
+                    <label form="nome">Nome de quem pediu ajuda</label>
+                    <input type="text" name="nome" placeholder="Nome">
+                </div>
+                <div class="formfield">
+                    <label form="nascimento">Nascimento</label>
+                    <input type="date" name="nascimento" placeholder="nascimento">
+                </div>
+                <div class="formfield">
+                    <label form="user">Rua</label>
                     <input type="text" name="user" placeholder="nome assistido">
                 </div>
-                <div class="textfield">
-                    <label form="password">Idade</label>
-                    <input type="password" name="password" placeholder="nome assistido">
+                <div class="formfield">
+                    <label form="numero">numero</label>
+                    <input type="text" name="user" placeholder="numero">
                 </div>
+                <div class="formfield">
+                    <label form="bairro">bairro</label>
+                    <input type="text" name="user" placeholder="bairro">
+                </div>
+                <div class="formfield">
+                    <label form="user">Rua</label>
+                    <input type="text" name="user" placeholder="nome assistido">
+                </div>
+                <div class="formfield">
+                    <label form="tel">telefone</label>
+                    <input type="text" name="tel" placeholder="telefone">
+                </div>
+                <div class="formfield">
+                    <label form="cpf">cpf</label>
+                    <input type="text" name="cpf" placeholder="cpf">
+                </div>
+                <div class="formfield">
+                    <label form="tel">Cras</label>
+                    <input type="text" name="cras" placeholder="CRAS">
+                </div>
+
+                <div class="formfield" id="radio-estadio">
+                    <p>Estado Civil</p>
+                    <input type="radio" id="casado" name="estadocivil" value="casado">
+                    <label for="casado">casado</label><br>
+                    <input type="radio" id="solteiro" name="estadocivil" value="solteiro">
+                    <label for="solteiro">solteiro</label><br>
+                    <input type="radio" id="viuvo" name="estadocivil" value="viuvo">
+                    <label for="viuvo">viuvo</label>
+                    <input type="radio" id="amasiado" name="estadocivil" value="amasiado">
+                    <label for="amasiado">amasiado</label>
+                </div>
+
+                <div class="formfield" id="radio-batizado">
+                    <p>Batizado</p>
+                    <input type="radio" id="batizado1" name="batizado" value="sim">
+                    <label for="batizado1">sim</label>
+                    <input type="radio" id="batizado0" name="batizado" value="nao">
+                    <label for="batizado0">não</label>
+                </div>
+
+                <div class="formfield" id="radio-trabalha">
+                    <p>Trabalha?</p>
+                    <input type="radio" id="traballha1" name="trabalha" value="sim">
+                    <label for="batizado1">sim</label>
+                    <input type="radio" id="trabalha0" name="trabalha" value="nao">
+                    <label for="trabalha    0">não</label>
+                </div>
+
+
+
+                <div class="formfield" id="radio-batizado">
+                    <p>Batizado</p>
+                    <input type="radio" id="batizado1" name="batizado" value="sim">
+                    <label for="batizado1">sim</label>
+                    <input type="radio" id="batizado0" name="batizado" value="nao">
+                    <label for="batizado0">não</label>
+                </div>
+
+                <div class="formfield" id="radio-trabalha">
+                    <p>Trabalha?</p>
+                    <input type="radio" id="traballha1" name="conjtrabalha" value="sim">
+                    <label for="batizado1">sim</label>
+                    <input type="radio" id="conjtrabalha0" name="conjtrabalha" value="nao">
+                    <label for="conjtrabalha0">não</label>
+                </div>
+
                 <button class="btn-form" onclick="">form</button>
             </div>
         </div>

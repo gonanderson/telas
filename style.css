@@ -145,13 +145,3 @@ body * {
 
 
 /* A partir daqui é tela de formulariooooooooooooo... */
-
-
-.main-form{
-    width: 100vw;
-    height: 100vh;
-    background:#e6e6e6 ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
