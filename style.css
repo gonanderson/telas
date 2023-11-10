@@ -145,3 +145,7 @@ body * {
 
 
 /* A partir daqui é tela de formulariooooooooooooo... */
+
+.formfieldlong input {
+    width: 40%;
+}

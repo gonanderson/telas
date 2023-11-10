@@ -10,7 +10,8 @@
     <div class="main-form">
         <div class="right-form">
             <div class="card-form">
-                <h1>Formulario</h1>
+                <h1>Levantamento Socio Economico</h1>
+                <!-- falta numero do cadastro (USO DO CP) e tambem  Repassado para a conferencia em xx/xx/xxxx -->
                 <div class="formfield">
                     <label form="datapedido">Data do pedido de ajuda</label>
                     <input type="date" name="datapedido" placeholder="data do pedido">
@@ -22,10 +23,6 @@
                 <div class="formfield">
                     <label form="nome">Nome de quem pediu ajuda</label>
                     <input type="text" name="nome" placeholder="Nome">
-                </div>
-                <div class="formfield">
-                    <label form="nascimento">Nascimento</label>
-                    <input type="date" name="nascimento" placeholder="nascimento">
                 </div>
                 <div class="formfield">
                     <label form="user">Rua</label>
@@ -40,10 +37,6 @@
                     <input type="text" name="user" placeholder="bairro">
                 </div>
                 <div class="formfield">
-                    <label form="user">Rua</label>
-                    <input type="text" name="user" placeholder="nome assistido">
-                </div>
-                <div class="formfield">
                     <label form="tel">telefone</label>
                     <input type="text" name="tel" placeholder="telefone">
                 </div>
@@ -52,9 +45,18 @@
                     <input type="text" name="cpf" placeholder="cpf">
                 </div>
                 <div class="formfield">
-                    <label form="tel">Cras</label>
+                    <label form="profissao">Profissão</label>
+                    <input type="text" name="profissao" placeholder="profissão">
+                </div>
+                <div class="formfield">
+                    <label form="cras">Cras</label>
                     <input type="text" name="cras" placeholder="CRAS">
                 </div>
+                <div class="formfield">
+                    <label form="nascimento">Nascimento</label>
+                    <input type="date" name="nascimento" placeholder="nascimento">
+                </div>
+                
 
                 <div class="formfield" id="radio-estadio">
                     <p>Estado Civil</p>
@@ -84,8 +86,6 @@
                     <label for="trabalha    0">não</label>
                 </div>
 
-
-
                 <div class="formfield" id="radio-batizado">
                     <p>Batizado</p>
                     <input type="radio" id="batizado1" name="batizado" value="sim">
@@ -93,14 +93,92 @@
                     <input type="radio" id="batizado0" name="batizado" value="nao">
                     <label for="batizado0">não</label>
                 </div>
+                <hr>
+                <h2>Conjuge</h2>
+                <div class="formfield">
+                    <label form="conjnome">Nome do conjuge</label>
+                    <input type="text" name="conjnome" placeholder="Nome do Conjuge">
+                </div>
 
                 <div class="formfield" id="radio-trabalha">
                     <p>Trabalha?</p>
                     <input type="radio" id="traballha1" name="conjtrabalha" value="sim">
-                    <label for="batizado1">sim</label>
+                    <label for="conjtrabalha1">sim</label>
                     <input type="radio" id="conjtrabalha0" name="conjtrabalha" value="nao">
                     <label for="conjtrabalha0">não</label>
                 </div>
+                <div class="formfield">
+                    <label form="conjcpf">cpf</label>
+                    <input type="text" name="conjcpf" placeholder="cpf">
+                </div>
+                <div class="formfield">
+                    <label form="conjcras">Cras</label>
+                    <input type="text" name="conjcras" placeholder="CRAS">
+                </div>
+                <div class="formfield">
+                    <label form="conjprofissao">Profissão</label>
+                    <input type="text" name="conjprofissao" placeholder="profissão">
+                </div>
+                <div class="formfield" id="radio-batizado">
+                    <p>Batizado</p>
+                    <input type="radio" id="conjbatizado1" name="conjbatizado" value="sim">
+                    <label for="conjbatizado1">sim</label>
+                    <input type="radio" id="conjbatizado0" name="conjbatizado" value="nao">
+                    <label for="conjbatizado0">não</label>
+                </div>
+                <div class="formfield">
+                    <label form="conjnascimento">Nascimento</label>
+                    <input type="date" name="conjnascimento" placeholder="nascimento">
+                </div>
+                
+                <hr>
+                <!-- AQUI FAZER UMA TABELA COM OS DADOS
+                    nome/parentesco   idade   estuda   batizado   trabalha
+                -->
+                <h1>Demais dependentes que moram na casa</h1>
+                <hr>
+                <div class="formfieldlong" >
+                    <label form="rendafamiliar">Profissão</label>
+                    <input type="text" name="rendafamiliar" placeholder="Total de renda familiar? (Trabalho, INSS, Beneficios do governo, etc) R$:">
+                </div>
+
+                <div class="formfield" id="radio-aluguel">
+                    <label form="aluguel">Paga aluguel?</label>
+                    <input type="radio" id="aluguel1" name="aluguel" value="sim">
+                    <label for="aluguel1">sim</label>
+                    <input type="radio" id="aluguel0" name="aluguel" value="nao">
+                    <label for="aluguel0">não</label>
+                    <input type="text" name="alugel" placeholder="Se paga, quanto? R$:">
+                </div>
+
+                <div class="formfield" id="radio-projetohabitacional">
+                    <label form="projhab">Estão em algum projeto habitacional?</label>
+                    <input type="radio" id="projhab1" name="projhab" value="sim">
+                    <label for="aluguel1">sim</label>
+                    <input type="radio" id="projhab0" name="projhab" value="nao">
+                    <label for="projhab0">não</label>
+                    <input type="text" name="projhab" placeholder="Se não, porque não?">
+                </div>
+
+                <div class="formfieldlong">
+                    <label form="mudardevida">A familia precisa de ajuda emergencial ou pretende mudar de vida? Que passos pretende dar e em que podemos ajudar?</label>
+                    <input type="text" name="mudardevida" placeholder="Disserte">
+                </div>
+
+                <div class="formfield" id="radio-conclusao">
+                    <label form="conclusao">Conclusao da sindicância</label>
+                    <input type="radio" id="conclusao1" name="conclusao" value="sim">
+                    <label for="aluguel1">APROVADA</label>
+                    <input type="radio" id="conclusao0" name="conclusao" value="nao">
+                    <label for="projhab0">INDEFERIDA</label>
+                    <input type="text" name="conclusao" placeholder="OBS:">
+                </div>
+
+                <div class="formfieldlong">
+                    <label form="sindicadores">Sindicadores</label>
+                    <input type="text" name="sindicadores" placeholder="Nomes">
+                </div>
+
 
                 <button class="btn-form" onclick="">form</button>
             </div>
